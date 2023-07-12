@@ -31,6 +31,9 @@ module.exports = {
     filename: "bundle.js"
   },
   mode: "development",
+  devServer: {
+    port: 3000,
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "..", "./public/index.html")
